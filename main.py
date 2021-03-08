@@ -1,16 +1,14 @@
-# This is a sample Python script.
+from typing import Optional
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+from view.AppWindow import AppWindow
+from loguru import logger
 
 
-# Press the green button in the gutter to run the script.
+def callback(video_url: Optional[str], audio_url: Optional[str]):
+    print("callback")
+
+
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    logger.info("starting app")
+    app_window = AppWindow(callback=callback)
+    app_window.show()
