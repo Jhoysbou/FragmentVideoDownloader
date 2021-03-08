@@ -3,6 +3,10 @@ Download and concatenate fragmented videos from any website with ease!
 
 ### Tired concatenating fragments of a video? This app will help you! 
 
+#### Content
+[How to use](#how-to-use) \
+[Info](#info)
+
 ## How to use
 1. Go to a website where you want to download a video.
 2. Open the web inspector (Safari and Chrome: COMMAND + OPTION + I or CTRL + ALT + I). Go to the Network tab
