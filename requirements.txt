@@ -1,0 +1,10 @@
+altgraph==0.17
+certifi==2020.12.5
+chardet==4.0.0
+idna==2.10
+loguru==0.5.3
+macholib==1.14
+pyinstaller==4.2
+pyinstaller-hooks-contrib==2021.1
+requests==2.25.1
+urllib3==1.26.3
