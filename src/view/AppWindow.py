@@ -31,11 +31,11 @@ class AppWindow:
         video_input.grid(row=0, column=1)
 
         tk.Label(self.__main, text="From").grid(row=1, pady=10, padx=10)
-        from_input = tk.Entry(self.__main, width=3)
+        from_input = tk.Entry(self.__main, width=5)
         from_input.grid(row=1, column=1)
 
         tk.Label(self.__main, text="To").grid(row=2, pady=10, padx=10)
-        to_input = tk.Entry(self.__main, width=3)
+        to_input = tk.Entry(self.__main, width=5)
         to_input.grid(row=2, column=1)
 
         # audio_input = tk.Entry(self.__main, width=20)
