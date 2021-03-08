@@ -43,7 +43,7 @@ class AppWindow:
         tk.Button(
             self.__main,
             text='start',
-            command=lambda: self.callback(video_input.get(), None, from_=from_input, to_=to_input)
+            command=lambda: self.callback(video_input.get(), None, from_=from_input.get(), to_=to_input.get())
         ).grid(row=2, column=1, sticky="e")
 
     def __change_visibility(self, entry):
