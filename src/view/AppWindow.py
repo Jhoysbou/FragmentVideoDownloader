@@ -19,22 +19,31 @@ class AppWindow:
         tk.Label(self.__main, text="Video URL").grid(row=0, pady=10, padx=10)
         self.__is_audio_separated = tk.IntVar(value=0)
 
-        audio_checkbox = tk.Checkbutton(self.__main, {
-            "variable": self.__is_audio_separated,
-            "text": "Audio URL",
-            "command": lambda: self.__change_visibility(audio_input)
-        })
-        audio_checkbox.grid(row=1, column=0, padx=10)
+        # TODO: implement separate audio
+        # audio_checkbox = tk.Checkbutton(self.__main, {
+        #     "variable": self.__is_audio_separated,
+        #     "text": "Audio URL",
+        #     "command": lambda: self.__change_visibility(audio_input)
+        # })
+        # audio_checkbox.grid(row=1, column=0, padx=10)
 
         video_input = tk.Entry(self.__main, width=20)
         video_input.grid(row=0, column=1)
 
-        audio_input = tk.Entry(self.__main, width=20)
+        tk.Label(self.__main, text="From").grid(row=1, pady=10, padx=10)
+        from_input = tk.Entry(self.__main, width=3)
+        from_input.grid(row=1, column=1)
+
+        tk.Label(self.__main, text="To").grid(row=2, pady=10, padx=10)
+        to_input = tk.Entry(self.__main, width=3)
+        to_input.grid(row=2, column=1)
+
+        # audio_input = tk.Entry(self.__main, width=20)
 
         tk.Button(
             self.__main,
             text='start',
-            command=lambda: self.callback(video_input.get(), audio_input.get())
+            command=lambda: self.callback(video_input.get(), None, from_=from_input, to_=to_input)
         ).grid(row=2, column=1, sticky="e")
 
     def __change_visibility(self, entry):

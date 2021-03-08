@@ -1,3 +1,5 @@
 .idea
 /venv/
 /src/test/temp/
+
+__pycache__/
