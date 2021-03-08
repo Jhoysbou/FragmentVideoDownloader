@@ -39,7 +39,7 @@ class FragmentVideoDownloader:
         logger.info("starting videos concatenation")
         os.system(
             f'ffmpeg -f concat -i {self._path + os.sep + "video" + os.sep + "videos.list"}'
-            f' -c copy output.{self.video_url.split(".")[-1]} -y'
+            f' -c copy {self._path + os.sep}output.{self.video_url.split(".")[-1]} -y'
         )
 
     def _prepare(self):

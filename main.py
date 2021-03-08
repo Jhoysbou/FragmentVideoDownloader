@@ -22,7 +22,7 @@ if __name__ == '__main__':
         CURRENT_DIR = os.sep.join(sys.argv[0].split("/")[:-1])
     else:
         CURRENT_DIR = os.getcwd()
-    logger.add(f'{CURRENT_DIR + os.sep}log{os.sep}DrillingEvents.log', format="{time} {level} {message}",
+    logger.add(f'{CURRENT_DIR + os.sep}log{os.sep}FragmentVideoDownloader.log', format="{time} {level} {message}",
                rotation="1 MB", level="DEBUG")
 
     logger.info("starting app")
