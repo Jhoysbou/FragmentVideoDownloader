@@ -34,6 +34,7 @@ Your concatenated file is `temp/output.{YOUR_FILE_EXTENSION}`. The raw fragments
 
 ![](img/7.png)
 
-### No quality loss!
-### Requires FFMPEG!
+### Info 
+- **No quality loss!**
+- **Requires FFMPEG!**
 [Get it here](https://ffmpeg.org/download.html)
