@@ -9,7 +9,7 @@ from src.view.AppWindow import AppWindow
 def callback(video_url: Optional[str], audio_url: Optional[str], from_: int, to_: int):
     downloader: FragmentVideoDownloader = FragmentVideoDownloader(".",
                                                                   video_url,
-                                                                  audio_url, from_=0, to_=50)
+                                                                  audio_url, from_=from_, to_=to_)
     downloader.download()
     downloader.concat()
 

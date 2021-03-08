@@ -3,3 +3,5 @@
 /src/test/temp/
 
 __pycache__/
+/output.*
+/temp/
